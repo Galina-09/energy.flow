@@ -3,7 +3,6 @@ const fullUrl = window.location.pathname;
 const lastSlashIndex = fullUrl.lastIndexOf('/');
 const result = fullUrl.substring(lastSlashIndex);
 
-console.log(result);
 function checkLocalStorageData(key) {
   let storageItem = localStorage.getItem(key);
   if (!storageItem) {
