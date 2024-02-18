@@ -3,6 +3,7 @@ const fullUrl = window.location.pathname;
 const lastSlashIndex = fullUrl.lastIndexOf('/');
 const result = fullUrl.substring(lastSlashIndex);
 
+console.log(result);
 function checkLocalStorageData(key) {
   let storageItem = localStorage.getItem(key);
   if (!storageItem) {
@@ -190,11 +191,11 @@ if (result === '/favorites.html') {
     checkScroll();
 
     // Check pagination visibility on initial load
-    togglePagination();
+    // togglePagination();
 
     // Перевірка видимості пагінації та ініціалізація пагінації під час зміни розміру вікна
     window.addEventListener('resize', function () {
-      togglePagination();
+      //togglePagination();
       paginate();
       checkScroll();
     });
